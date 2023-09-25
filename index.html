@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>JYUNYI個人履歷表</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+      $(function () {
+        $("#point1").click(function () {
+          $("#photo1").fadeIn();
+          $("#photo2").fadeOut();
+          $("#photo3").fadeOut();
+
+          $("#point1").css("background-color", "lightseagreen");
+          $("#point2").css("background-color", "white");
+          $("#point3").css("background-color", "white");
+        });
+
+        $("#point2").click(function () {
+          $("#photo2").fadeIn();
+          $("#photo1").fadeOut();
+          $("#photo3").fadeOut();
+
+          $("#point2").css("background-color", "lightseagreen");
+          $("#point1").css("background-color", "white");
+          $("#point3").css("background-color", "white");
+        });
+
+        $("#point3").click(function () {
+          $("#photo3").fadeIn();
+          $("#photo2").fadeOut();
+          $("#photo1").fadeOut();
+
+          $("#point3").css("background-color", "lightseagreen");
+          $("#point2").css("background-color", "white");
+          $("#point1").css("background-color", "white");
+        });
+      });
+    </script>
+  </head>
+
+<body>
+  <div id="card">
+    <div id="photo">
+    <img src="ph-1.jpg" width="238" height="244" id="photo1" />
+    <img src="ph-2.jpg" width="238" height="244" id="photo2" />
+    <img src="ph-3.jpg" width="238" height="244" id="photo3" />
+  <div class="point" id="point1" ></div>
+  <div class="point" id="point2" ></div>
+  <div class="point" id="point3" ></div>
+  </div>
+    <div id="intro">
+    
+      <h1>呂俊億<//h1>
+      <h2>38歲<//h2>
+      <h2>超級全棧人</h2>
+      <h2>高雄</h2>
+      <h3>到底是去加拿大還是澳洲呢</h3>
+    </div>
+
+    <div id="about">
+      <h4><i class="fa-solid fa-user-tie"></i> 關於我</h4>
+      <p>
+        全棧工程師是指，一個能處理資料庫、伺服器、系統工程和用戶端的所有工作的工程師。
+        根據專案的不同，客戶需要的可能是移動棧、Web棧，或者原生應用程式棧。
+        基本上，當客戶需要一個全棧工程師的時候，客戶需要的是一個全能的“大神”。
+        簡單來說，全棧工程師就是可以獨立完成一個產品的人</p>
+      <h4><i class="fa-solid fa-briefcase"></i> 工作經歷</h4>
+      <ul>
+        <li>國科會研究助理</li>
+        <li>一級軍艦監修官</li>
+        <li>美軍武獲專案管制官</li>
+      </ul>
+      <h4><i class="fa-solid fa-square-share-nodes"></i> 社群連結</h4>
+      <ul>
+        <li><a href="https://www.facebook.com/groups/1989129047771331/posts/7037739869576865/"> Facebook</li>
+        <li><a href="https://www.youtube.com/channel/UCEI4ad1f0LLQJD54wfDdu7A">youtube</li>
+        <li><a href="https://github.com/cutoff721108">github</li>
+      </ul>
+    </div>
+
+    <div id="other">
+      <h4><i class="fa-solid fa-person-digging"></i> 個性</h4>
+      <div class="block">
+        <div class="left-text">內向</div>
+        <div class="right-text">外向</div>
+        <div class="graybar-text"></div>
+        <div class="greenbar-text" id="greenbar-text1"></div>
+      </div>
+      <div class="block">
+        <div class="left-text">理性</div>
+        <div class="right-text">感性</div>
+        <div class="graybar-text"></div>
+        <div class="greenbar-text" id="greenbar-text2"></div>
+      </div>
+      <div class="block">
+        <div class="left-text">謹慎</div>
+        <div class="right-text">冒險</div>
+        <div class="graybar-text"></div>
+        <div class="greenbar-text" id="greenbar-text3"></div>
+      </div>
+      <div class="block">
+        <div class="left-text">思考</div>
+        <div class="right-text">行動</div>
+        <div class="graybar-text"></div>
+        <div class="greenbar-text" id="greenbar-text4"></div>
+      </div>
+      <h4><i class="fa-solid fa-computer"></i> 技能</h4>
+      <div class="block">
+        <div class="left-text">HTML</div>
+        <div class="graybar-text"></div>
+        <div class="greenbar-text" id="greenbar-text5"></div>
+      </div>
+      <div class="block">
+        <div class="left-text">CSS</div>
+        <div class="graybar-text"></div>
+        <div class="greenbar-text" id="greenbar-text6"></div>
+      </div>
+      <div class="block">
+        <div class="left-text">Javascript</div>
+        <div class="graybar-text"></div>
+        <div class="greenbar-text" id="greenbar-text7"
+      </div>
+        <div class="block">
+          <div class="left-text">React</div>
+          <div class="graybar-text"></div>
+          <div class="greenbar-text"id="greenbar-text8"></div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
